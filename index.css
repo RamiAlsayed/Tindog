@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d3436;
+}
+
+.container {
+  background-color: FFFFFF;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  height: 41rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.col1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col2 {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-icon,
+.chat-icon {
+  width: 1.9rem;
+}
+
+.logo-icon,
+.nope-icon {
+  width: 4rem;
+}
+
+.dog-photos {
+  width: 98%;
+  height: auto;
+  margin: auto;
+  border-radius: 2rem;
+  position: relative;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.bio {
+  margin-top: -3.5rem;
+  color: aliceblue;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  position: absolute;
+}
+
+#cross,
+#heart {
+  cursor: pointer;
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.nope-badge,
+.like-badge {
+  width: 50%;
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+  display: none;
+  animation: wiggle 2s linear infinite;
+}
+
+/* Mobile view */
+
+@media (max-width: 460px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  .container {
+    max-width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+} ;
